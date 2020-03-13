@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>文件索引</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>大小</th>
+                    <th>修改日期</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{ each files }}
+                <tr>
+                    <td><a href="">{{$value}}</a></td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+                
+                {{ /each }}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
